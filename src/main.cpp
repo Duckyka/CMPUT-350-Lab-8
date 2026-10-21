@@ -7,13 +7,13 @@ int main() {
     // Code commented out for CI compiling
     // Uncomment them after implementation
 
-    // SpriteManager spriteManager;
-    // auto& texture = spriteManager.registerTexture("assets/sword_diamond.png");
-    // auto spriteID = spriteManager.createSprite(texture);
-    // auto& sprite = spriteManager.getSprite(spriteID);
-    // sprite.origin() = {114, 14};
-    // sprite.position() = {128, 128};
-    // sprite.scale().x = -1;
+    SpriteManager spriteManager;
+    auto& texture = spriteManager.registerTexture("assets/sword_diamond.png");
+    auto spriteID = spriteManager.createSprite(texture);
+    auto& sprite = spriteManager.getSprite(spriteID);
+    sprite.origin() = {114, 14};
+    sprite.position() = {128, 128};
+    sprite.scale().x = -1;
 
     sf::RenderWindow window(sf::VideoMode({256, 256}), "Sprites lab", sf::State::Windowed);
     // window.setMouseCursorVisible(false); // you can use this to hide the mouse

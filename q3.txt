@@ -1,0 +1,6 @@
+1. The best component from Sprite to move out would be VertexArray. The reason for this is because VertexArray essentially is a bounding box (used to contain 
+the sprite from the texture in this case), however bounding boxes can be used for any gameObject, specifically those that collide, or are drawn to the world. 
+From here these boxes can be made specific to the object they are used for. 
+
+2. When rendering transparent sprites onto one another, the destination sprite / colour has to be rendered first as this is the colour of the pixel the source 
+will be drawn onto. With this rendered, the source can come in to be rendered on top, taking the destination colour values and "blending" with them properly. 
